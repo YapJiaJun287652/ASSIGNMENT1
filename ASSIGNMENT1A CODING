@@ -1,0 +1,83 @@
+/**
+ * 
+ */
+package assignment;
+/**
+ * @author User
+ *
+ */
+
+import java.util.Scanner;
+
+public class Assignment1A {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		double discountreceived;
+		double pricetobepaid;
+		
+		int item = 3;
+		
+		int quantity1 = 2;
+		int quantity2 = 3;
+		int quantity3 = 1;
+		
+		double number1 = 150;
+		double number2 = 50;
+		double number3 = 30;
+		
+		double totalprice = number1*2 + number2*3 + number3*1;
+					
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Enter the number of items : ");
+		item = sc.nextInt();
+		
+		System.out.println("Enter the price of first item : ");
+		number1 = sc.nextInt();
+		System.out.println("Enter quantity of first item : ");
+		quantity1 = sc.nextInt();
+		
+		System.out.println("Enter the price of second item : ");
+		number2 = sc.nextInt();
+		System.out.println("Enter the quantity of second item : ");
+		quantity2 = sc.nextInt();
+		
+		System.out.println("Enter the price of third item : ");
+		number3 = sc.nextInt();
+		System.out.println("Enter the quantity of third item : ");
+		quantity3 = sc.nextInt();
+		
+		System.out.println("Total price : ");
+		totalprice = sc.nextDouble();
+		System.out.println("Discount received : ");
+		discountreceived = sc.nextDouble();
+		System.out.println("Price to be paid : ");
+		pricetobepaid = sc.nextDouble();
+		
+		System.out.println(" the number of items : " + item);
+		System.out.println(" the price of first item : " + number1);
+		System.out.println(" quantity of first item : " + quantity1);
+		System.out.println(" the price of second item : " + number2);
+		System.out.println(" quantity of second item : " + quantity2);
+		System.out.println(" the price of third item : " + number3);
+		System.out.println(" quantity of third item : " + quantity3);
+		
+		if(totalprice>100)
+		{	double discount1 = totalprice / 100 * 20;
+			double pricetobepaid1 = totalprice - discount1;
+			System.out.println("Total price : " + totalprice);
+			System.out.println("Discount price : " + discount1);
+			System.out.println("Price to be paid: " + pricetobepaid1);
+			
+		}
+		if(totalprice<100) {
+			double discount2 = totalprice / 100 * 10;
+			double pricetobepaid2 = totalprice - discount2;
+			System.out.println("Total price : " + totalprice);
+			System.out.println("Discount price : " + discount2);
+			System.out.println("Price to be paid: " + pricetobepaid2);
+			
+		}
