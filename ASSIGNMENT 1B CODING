@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package assignment;
+
+/**
+ * @author User
+ *
+ */
+import java.util.Scanner;
+
+public class Exercise {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);//scan
+		
+		System.out.println("Enter the yearly interest rate :");//scan the interest
+		double number1 = sc.nextDouble();
+		System.out.println("Enter total loan amount :");//scan the total loan amount
+		int number2 = sc.nextInt();
+		System.out.println("Enter the number of years :");//scan the number of years
+		int year = sc.nextInt();
+		
+		int totalmonth = year *12;//total month
+		double monthlypayment = (int) ((number2 / 100) * number1);//total monthlypayment
+		System.out.println("The monthly interest payment :" + monthlypayment);//print monthly interest payment
+		
+		double totalpayment = (monthlypayment * + totalmonth);//totalpayment
+		System.out.println("The total payment :" + totalpayment);//printtotalpayment
